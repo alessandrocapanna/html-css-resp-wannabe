@@ -1,0 +1,152 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*** MEDIA QUERY ***/
+@media screen and (max-width: 479px) {
+  *{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .row h3 {
+    font-size: 30px;
+    padding: 20px 0 20px 0;
+  }
+}
+/* media query lezioni */
+@media screen and (max-width: 479px) {
+  #lezioni .row {
+    margin-top: 30px;
+    width: 470px;
+    border-bottom: 3px solid #2d3e51;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    padding: 10%;
+    width: 100%;
+  }
+}
+
+/* media query steps */
+@media screen and (max-width: 479px) {
+  #steps .row {
+    background-color: #fef4ee;
+    margin-top: 0;
+    width: 470px;
+    border-bottom: 3px solid #2d3e51;
+  }
+  #steps .row h1 {
+    margin-top: 0;
+    padding:30px 0 30px 0;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    padding: 10%;
+    width: 470px;
+    padding-top: 40px;
+  }
+  #steps .row>.right {
+    padding-bottom: 30px;
+  }
+  #steps .row>.left {
+    padding-top: 0;
+  }
+}
+
+/* media query why */
+@media screen and (max-width: 479px) {
+  #why .row {
+    margin-top: 0;
+    width: 470px;
+    background-color: lightgrey;
+  }
+  #why .row h1 {
+    margin-top: 0;
+    padding-top:30px;
+  }
+  #why .row .first {
+    margin-top: 20px;
+  }
+  #why .row .third {
+    padding-bottom: 30px;
+  }
+  #why .row hr {
+    margin: 20px;
+  }
+}
