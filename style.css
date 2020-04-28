@@ -72,8 +72,28 @@ img {
   clear: both;
 }
 
-/*** MEDIA QUERY ***/
+
+/*** MEDIA QUERY TABLET ***/
 @media screen and (max-width: 479px) {
+  *{
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .row h3 {
+    font-size: 30px;
+    padding: 20px 0 20px 0;
+  }
+}
+
+
+/*** MEDIA QUERY MOBILE ***/
+@media screen and (max-width: 419px) {
   *{
     font-size: 25px;
     padding: 0;
@@ -89,10 +109,10 @@ img {
   }
 }
 /* media query lezioni */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 419px) {
   #lezioni .row {
     margin-top: 30px;
-    width: 470px;
+    width: 400px;
     border-bottom: 3px solid #2d3e51;
   }
   #lezioni .row>.left,
@@ -103,11 +123,11 @@ img {
 }
 
 /* media query steps */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 419px) {
   #steps .row {
     background-color: #fef4ee;
     margin-top: 0;
-    width: 470px;
+    width: 400px;
     border-bottom: 3px solid #2d3e51;
   }
   #steps .row h1 {
@@ -118,7 +138,7 @@ img {
   #steps .row>.central,
   #steps .row>.right {
     padding: 10%;
-    width: 470px;
+    width: 400px;
     padding-top: 40px;
   }
   #steps .row>.right {
@@ -130,15 +150,21 @@ img {
 }
 
 /* media query why */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 419px) {
   #why .row {
     margin-top: 0;
-    width: 470px;
+    width: 400px;
     background-color: lightgrey;
   }
   #why .row h1 {
     margin-top: 0;
     padding-top:30px;
+  }
+  #why .row .first,
+  #why .row .second,
+  #why .row .third {
+    padding:10%;
+    margin-top: 0;
   }
   #why .row .first {
     margin-top: 20px;
